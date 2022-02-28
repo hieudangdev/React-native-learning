@@ -9,12 +9,13 @@ export default function Loginfb() {
   return (
     <View style={styles.container}>
         <StatusBar style="dark"/>
-            <View style={styles.imgview}>
-            <Image style={styles.img} source={imgback}/>
-            </View>
+
 
         <View style={styles.content}>
 
+        <View style={styles.imgview}>
+            <Image style={styles.img} source={imgback}/>
+            </View>
             <TextInput style={styles.inputuser}
                 placeholder="Số điện thoại hoặc email"
                 placeholderTextColor="#cdcdcf"
@@ -26,9 +27,9 @@ export default function Loginfb() {
             />
 
             <TouchableOpacity style={styles.buttonlogin}>
-                <Text style={styles.txt}>Dang nhap</Text>
+                <Text style={styles.txt}>Đăng nhập</Text>
             </TouchableOpacity>
-        </View>
+
 
         <View style={styles.action} >
       <TouchableOpacity style={styles.buttonaction}>
@@ -49,6 +50,7 @@ export default function Loginfb() {
 
     </View>
     </View>
+    </View>
    </View>
 
   );
@@ -66,7 +68,7 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingTop: Constants.statusBarHeight,
     backgroundColor: '#fff',
-
+    justifyContent: "space-between",
 
 
   },
@@ -96,7 +98,7 @@ const styles = StyleSheet.create({
 
   },
   inputuser:{
-    width:350,
+    width:380,
     height:40,
     borderWidth:0.17,
     borderRadius:5,

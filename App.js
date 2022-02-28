@@ -4,13 +4,14 @@ import Constants from 'expo-constants';
 import React from 'react';
 import Loginmomo from './components/loginmomo';
 import Loginfb from './components/loginfacebook';
+import Thelight from './components/thelight';
 
 
 
 export default class App extends React.Component {
   render() {
     return (
-        <Loginfb/>
+        <Thelight/>
     );
   }
 }
